@@ -349,3 +349,18 @@ a {
     font-size: 1.8rem;
   }
 }
+/* Media */
+.media {
+  display: flex;
+  flex-direction: row;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+.media__title {
+  margin: 0;
+}
+.media__icon {
+  margin: 1rem 0;
+}
