@@ -359,8 +359,46 @@ a {
   margin: 0 2rem;
 }
 .media__title {
+  font-weight: 600;
   margin: 0;
 }
 .media__icon {
   margin: 1rem 0;
+}
+.media__text {
+  font-size: 2rem;
+}
+
+/* Quotes */
+
+.quote__text {
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+}
+
+.quote__company {
+  opacity: 0.4;
+}
+.quote__line {
+  position: relative;
+  bottom: 6px;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote__company {
+    font-size: 1.6rem;
+  }
+  .quote__author,
+  .quote__text {
+    font-size: 2.4rem;
+  }
 }
