@@ -542,3 +542,38 @@ a {
 .collapsible--checked .collapsible__icon {
   transform: rotate(0);
 }
+
+/* Blocks */
+
+.block {
+  padding: 6rem 2rem;
+}
+.block__header {
+  text-align: center;
+}
+.block--dark .block__heading,
+.block--blue .block__heading {
+  color: #fff;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+.block__header {
+  padding-bottom: 7rem;
+}
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+.block--dark {
+  background-color: #000;
+  color: #7b858b;
+}
+.block--blue {
+  background-color: #1b0760;
+}
