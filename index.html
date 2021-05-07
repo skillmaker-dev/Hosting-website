@@ -15,29 +15,36 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
   <body>
-    <section class="block block--dark block--skewed-left hero">
-      <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="hero__heading block__heading">Cloud Hosting for Pros</h1>
-          <p class="hero__text">
-            Deploy your websites in less than 60 seconds.
-          </p>
-          <a class="button button--accent button--stretched" href="#"
-            >Get Started</a
-          >
-        </header>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
-          />
-          <source
-            type="image/png"
-            srcset="images/banner.png 1x, images/banner@2x.png 2x"
-          />
-          <img class="hero__image" src="images/banner.png" alt="" />
-        </picture>
+    <section class="block container block__domain">
+      <header class="block__header">
+        <h2 class="block__heading">Starting at $10 per month</h2>
+        <p class="block__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias culpa,
+          de
+        </p>
+      </header>
+      <div class="input-group">
+        <input
+          class="input"
+          type="text"
+          placeholder="Enter domaine name here..."
+        />
+        <button class="button button--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="../images/sprite.svg#search"></use></svg
+          >Search
+        </button>
       </div>
     </section>
+    <ul class="list block--domain__list">
+      <li class="list__item">.com 1$</li>
+      <li class="list__item">
+        <span class="badge badge--secondary">.net 2$</span>
+      </li>
+      <li class="list__item">.org 4$</li>
+      <li class="list__item">.tech 3$</li>
+      <li class="list__item">.io 7$</li>
+      <li class="list__item">More</li>
+    </ul>
   </body>
 </html>

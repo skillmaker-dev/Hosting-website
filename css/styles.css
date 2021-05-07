@@ -190,17 +190,23 @@ a {
 .button {
   border-radius: 40px;
   border: 0;
+  cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
-  text-transform: uppercase;
-  white-space: nowrap;
-  cursor: pointer;
   margin: 1rem 0;
+  outline: 0;
+  padding: 2rem 3rem;
   text-align: center;
+  text-transform: uppercase;
   transition: background-color 0.15s;
+  white-space: nowrap;
 }
-
+.button .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
 .button--primary {
   background-color: var(--color-primary);
   color: #ffff;
@@ -271,6 +277,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
+  padding: 1.5rem 2rem;
 }
 .input-group .button {
   margin: 5px;
@@ -550,7 +557,6 @@ a {
 }
 .block__header {
   text-align: center;
-  padding-bottom: 7rem;
 }
 .block--dark .block__heading,
 .block--blue .block__heading {
@@ -560,14 +566,14 @@ a {
 .block__heading {
   margin-top: 0;
 }
+.block--skewed-right {
+  padding-bottom: calc(6rem + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
 
 .block--skewed-left {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: calc(6rem + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-}
-.block--skewed-right {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
 }
 .block--dark {
   background-color: #000;
@@ -609,12 +615,12 @@ a {
   padding: 0;
 }
 
-.list__item {
+.nav__list .list__item {
   border-bottom: 1px solid #222;
   padding: 0.5rem 2rem;
   text-align: center;
 }
-.list__item a:hover {
+.nav__list .list__item a:hover {
   color: #fff;
 }
 .collapsible--checked .nav__button {
@@ -680,5 +686,28 @@ a {
   .hero__image,
   .hero__heading {
     animation: zoomIn 0.5s ease-in;
+  }
+}
+/*Domains*/
+
+.block__domain .input-group {
+  border: 0;
+  box-shadow: 0 0 50px 30px #e6ebee;
+  margin: 0 auto;
+  max-width: 670px;
+}
+.block--domain__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 6rem);
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .block--domain__list {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
