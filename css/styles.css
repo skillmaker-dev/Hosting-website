@@ -747,21 +747,32 @@ a {
 .feature {
   margin-bottom: 12rem;
 }
-.feature .block__header {
-  text-align: left;
-}
-.feature .block {
-  padding: 1rem;
-}
-.feature .block__heading {
+.feature .feature__heading {
   font-weight: 600;
 }
-
 .feature__image {
   width: 100%;
 }
-@media screen and (min-width: 1024px) {
+.feature__content .feature__heading {
+  margin-top: 1rem;
+}
+.feature__description {
+  font-size: 2rem;
+}
+.grid--1x2 {
+  row-gap: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+  .grid--1x2 {
+    column-gap: 2rem;
+  }
+  .feature__description {
+    font-size: 1.8rem;
+  }
   .features-block {
-    margin: 0 18rem;
+    margin: 0 auto;
   }
 }
