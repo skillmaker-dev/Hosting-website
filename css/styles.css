@@ -185,6 +185,7 @@ a {
   width: 30px;
   fill: #fff;
 }
+
 /* Buttons */
 
 .button {
@@ -573,7 +574,9 @@ a {
 .block--blue .block__heading {
   color: #fff;
 }
-
+.block--white .block__heading {
+  color: var(--color-headings);
+}
 .block__heading {
   margin-top: 0;
 }
@@ -590,9 +593,15 @@ a {
   background-color: #000;
   color: #7b858b;
 }
+.block--white {
+  background-color: #fff;
+  color: #7b858b;
+  font-size: 2rem;
+}
 .block--blue {
   background-color: #1b0760;
 }
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -730,4 +739,29 @@ a {
 .block__plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+/* features */
+.features-block {
+  padding: 5rem 2rem;
+}
+.feature {
+  margin-bottom: 12rem;
+}
+.feature .block__header {
+  text-align: left;
+}
+.feature .block {
+  padding: 1rem;
+}
+.feature .block__heading {
+  font-weight: 600;
+}
+
+.feature__image {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .features-block {
+    margin: 0 18rem;
+  }
 }
