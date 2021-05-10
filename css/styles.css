@@ -26,7 +26,7 @@ h1 {
   font-size: 7rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3.6rem;
 }
 h3 {
   font-size: 3rem;
@@ -474,6 +474,9 @@ a {
 .testimonial .testimonial__image {
   width: 100%;
 }
+.testimonial-block .block {
+  padding-bottom: 1rem;
+}
 
 .testimonial .grid {
   column-gap: 3rem;
@@ -593,6 +596,7 @@ a {
 }
 .block__heading {
   margin-top: 0;
+  line-height: 1.1;
 }
 .block--skewed-right {
   padding-bottom: calc(6rem + 4rem);
