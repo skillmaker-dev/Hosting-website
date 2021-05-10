@@ -5,7 +5,7 @@ html {
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -408,10 +408,12 @@ a {
 }
 
 /* Quotes */
-
+.quote {
+  margin: 0;
+}
 .quote__text {
   font-style: italic;
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 1.3;
 }
 
@@ -422,7 +424,9 @@ a {
 .quote__text::after {
   content: close-quote;
 }
-
+.quote__author {
+  font-size: 2rem;
+}
 .quote__company {
   opacity: 0.4;
 }
@@ -438,6 +442,9 @@ a {
   .quote__author,
   .quote__text {
     font-size: 2.4rem;
+  }
+  .quote {
+    margin: 3rem;
   }
 }
 
@@ -462,6 +469,7 @@ a {
 
 .testimonial {
   padding: 3rem;
+  font-size: 2rem;
 }
 .testimonial .testimonial__image {
   width: 100%;
@@ -478,7 +486,13 @@ a {
   top: 3rem;
   right: -32px;
 }
+.quote__author {
+  font-weight: 400;
+}
 
+.testimonial-block {
+  margin: 2rem;
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .testimonial .quote__text {
     font-size: 2rem;
