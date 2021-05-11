@@ -868,7 +868,6 @@ a {
 
 .website-footer .collapsible__content,
 .website-footer .footer__link {
-  transition: color 0.3s;
   color: #7b858b;
 }
 .footer__brand {
@@ -898,6 +897,7 @@ a {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
+  
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
