@@ -677,6 +677,7 @@ a {
   border-radius: 3px;
 }
 .nav__logo {
+  width: 150px;
   transform: translateY(5px);
 }
 

@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website</title>
+    <meta name="description" content="Visit this stunning website to Get so many website domaines and hosting for a very low price...">
+    <meta property="og:title" content="Margo Hosting">
+
+    <title>Margo Hosting - Cheap Website Hosting</title>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap"
@@ -13,7 +17,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -23,9 +27,9 @@
           <use xlink:href="../images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
-          <li class="list__item"><a href="#">Home</a></li>
+          <li class="list__item"><a href="/">Home</a></li>
           <li class="list__item"><a href="#">About us</a></li>
-          <li class="list__item"><a href="#">Github</a></li>
+          <li class="list__item"><a href="https://github.com/skillmaker-dev" target="_blank">Github</a></li>
         </ul>
       </div>
       
@@ -56,7 +60,7 @@
       </div>
     </section>
 
-    <section class="block container block__domain">
+    <section class="block container block__domain " data-aos="fade-up">
       <header class="block__header">
         <h2 class="block__heading">Starting at $10 per month</h2>
         <p class="block__content">
@@ -87,7 +91,7 @@
       <li class="list__item">More</li>
     </ul>
 
-    <section class="block__plans container">
+    <section class="block__plans container" data-aos="fade-up">
       <div class="grid grid--1x3">
         <div class="plan non-popular-plan">
           <div class="card card--secondary">
@@ -173,8 +177,8 @@
         </header>
       </div>
 
-      <article class="feature grid grid--1x2">
-        <div class="feature__content">
+      <article class="feature grid grid--1x2" >
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="../images/sprite.svg#clock"></use>
@@ -190,7 +194,7 @@
       </article>
 
       <article class="feature grid grid--1x2">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="../images/sprite.svg#clock"></use>
@@ -206,7 +210,7 @@
       </article>
 
       <article class="feature grid grid--1x2">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="../images/sprite.svg#clock"></use>
@@ -227,8 +231,8 @@
         <header class="block__header">
           <h2 class="block__heading">User-friendly Control Panel</h2>
           <div class="block__content grid grid--1x2">
-            <img class="showcase__image" src="images/ipad.png" alt="" />
-            <div class="showcase-description">
+            <img class="showcase__image" src="images/ipad.png" alt="" data-aos="fade-right"/>
+            <div class="showcase-description" data-aos="fade-left">
               <div class="media">
                 <div class="media__icon">
                   <svg class="icon">
@@ -287,7 +291,7 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam.
         </p>
       </header>
-      <div class="card testimonial container">
+      <div class="card testimonial container" data-aos="zoom-in">
         <div class="grid grid--1x2">
           <div class="testimonial__image-container">
             <span class="icon-container">
@@ -348,12 +352,12 @@
         <div class="footer__item">
           <div class="footer__content">
             <div class="collapsible">
-              <header class="collapsible__header">
+              <div class="collapsible__header">
                 <h2 class="collapsible__heading">LEARN MORE</h2>
                 <svg class="icon collapsible__icon">
                   <use xlink:href="../images/sprite.svg#chevron"></use>
                 </svg>
-              </header>
+              </div>
               <div class="collapsible__content">
                 <ul class="footer__links">
                   <li><a href="#" class="footer__link">About us</a></li>
@@ -368,12 +372,12 @@
         <div class="footer__item">
           <div class="footer__content">
             <div class="collapsible">
-              <header class="collapsible__header">
+              <div class="collapsible__header">
                 <h2 class="collapsible__heading">Products</h2>
                 <svg class="icon collapsible__icon">
                   <use xlink:href="../images/sprite.svg#chevron"></use>
                 </svg>
-              </header>
+              </div>
               <div class="collapsible__content">
                 <ul class="footer__links">
                   <li><a href="#" class="footer__link">About us</a></li>
@@ -388,12 +392,12 @@
         <div class="footer__item">
           <div class="footer__content">
             <div class="collapsible">
-              <header class="collapsible__header">
+              <div class="collapsible__header">
                 <h2 class="collapsible__heading">About us</h2>
                 <svg class="icon collapsible__icon">
                   <use xlink:href="../images/sprite.svg#chevron"></use>
                 </svg>
-              </header>
+              </div>
               <div class="collapsible__content">
                 <ul class="footer__links">
                   <li><a href="#" class="footer__link">About us</a></li>
@@ -409,12 +413,12 @@
         <div class="footer__item">
           <div class="footer__content">
             <div class="collapsible">
-              <header class="collapsible__header">
+              <div class="collapsible__header">
                 <h2 class="collapsible__heading">About us</h2>
                 <svg class="icon collapsible__icon">
                   <use xlink:href="../images/sprite.svg#chevron"></use>
                 </svg>
-              </header>
+              </div>
               <div class="collapsible__content">
                 <ul class="footer__links">
                   <li><a href="#" class="footer__link">About us</a></li>
@@ -428,10 +432,14 @@
         </div>
         <div class="footer__brand">
           <img src="images/logo.png" alt="" />
-          <p>Copyright 2020 Anas Chahid</p>
+          <p>Copyright 2021 Anas Chahid</p>
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
