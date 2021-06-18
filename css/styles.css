@@ -852,7 +852,7 @@ a {
 }
 
 /*footer*/
-.footer__sections{
+.footer__sections {
   margin-top: 5rem;
 }
 .website-footer {
@@ -871,6 +871,9 @@ a {
 .website-footer .collapsible__content,
 .website-footer .footer__link {
   color: #7b858b;
+}
+.website-footer .footer__link {
+  transition: color 0.3s;
 }
 .footer__brand {
   margin-top: 5rem;
@@ -899,7 +902,6 @@ a {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
